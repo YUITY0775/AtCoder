@@ -45,7 +45,6 @@ namespace C_Prepare_Another_Box {
             Console.WriteLine(wMinBoxSize);
         }
 
-
         static void TryPutAway(List<int> vToys, List<int> vBoxes, out int vMinBoxSize) {
             vMinBoxSize = -1;
             vToys.Sort();
