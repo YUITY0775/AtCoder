@@ -17,11 +17,11 @@ using System.Linq;
  ・入力される数値は全て整数
 
  <入力>
- N
- X(1) … X(N)​ 
+ N 
+ X(1) … X(N)​
  P(1) … P(N)
  Q
- L(1) R(1) 
+ L(1) R(1)
  …
  L(Q) R(Q)
 
@@ -36,22 +36,55 @@ namespace D_Country {
 
             // 入力受付
             int wVillageCount = int.Parse(Console.ReadLine());
-            var wVillagePositions = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
-            var wVillagePopulations = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
-
-            var wVillageInfos = new Dictionary<int, int>();
-            for (int i = 0; i < wVillageCount; i++) {
-                wVillageInfos.Add(wVillagePositions[i], wVillagePopulations[i]);
-            }
+            var wVillagePoints = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
+            var wPopulations = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
 
             var wQueries = new List<int[]>();
-            for (int i = 0; i < int.Parse(Console.ReadLine()); i++) {
+            int wQueryCount = int.Parse(Console.ReadLine());
+            for (int i = 0; i < wQueryCount; i++) {
                 var wLine = Console.ReadLine().Split(' ');
                 wQueries.Add(new int[] { int.Parse(wLine[0]), int.Parse(wLine[1]) });
             }
 
-            // 座標 -10^9 から X(i) までにある村の住民の人数の累積和を考える
-            var wRunningTotal = 
+            // i 番目の村までの住民の人数の累積和を考える
+            var wRunningTotal = new List<long>();
+            long wPopulation = 0;
+            for (int i = 0; i < wVillageCount; i++) {
+                wPopulation += wPopulations[i];
+                wRunningTotal.Add(wPopulation);
+            }
+
+            foreach (int[] wQuery in wQueries) {
+                int wRightIndex = GetVillageIndex(wQuery[1], wVillagePoints);
+                int wLeftIndex = GetVillageIndex(wQuery[0] - 1, wVillagePoints);
+                long wAnswer = (wRightIndex < 0 ? 0 : wRunningTotal[wRightIndex]) - (wLeftIndex < 0 ? 0 : wRunningTotal[wLeftIndex]);
+                Console.WriteLine(wAnswer);
+            }
+        }
+
+        /// <summary>
+        /// 対象座標とすべての村の座標配列を受け取り、対象座標以下の最右端にある村が何番目の村かを返す。
+        /// </summary>
+        /// <param name="vPoint">検索対象座標</param>
+        /// <param name="vVillagePoints">すべての村の座標配列</param>
+        /// <returns>対象座標以下の最右端にある村のインデックス</returns>
+        static int GetVillageIndex(int vPoint, int[] vVillagePoints) {
+            int wLeftIndex = 0;
+            int wRightIndex = vVillagePoints.Length - 1;
+
+            while (wRightIndex - wLeftIndex > 1) {
+                int wMidIndex = (wLeftIndex + wRightIndex) / 2;
+                if (vPoint == vVillagePoints[wMidIndex]) {
+                    return wMidIndex;
+                } else if (vPoint < vVillagePoints[wMidIndex]) {
+                    wRightIndex = wMidIndex;
+                } else {
+                    wLeftIndex = wMidIndex;
+                }
+            }
+            if (vPoint < vVillagePoints[wLeftIndex]) return -1;
+
+            return vPoint >= vVillagePoints[wRightIndex] ? wRightIndex : wLeftIndex;
         }
     }
 }
