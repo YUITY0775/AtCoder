@@ -24,12 +24,12 @@
 namespace A_Seats {
     internal class Program {
         static void Main(string[] args) {
-            var ｗSeatsCount = int.Parse(Console.ReadLine());
+            var wSeatsCount = int.Parse(Console.ReadLine());
             var InputText = Console.ReadLine();
             string wPattern = "#.#";
             int wCount = 0;
 
-            for (int i = 0; i < ｗSeatsCount - 2; i++) {
+            for (int i = 0; i < wSeatsCount - 2; i++) {
                 if (InputText.Substring(i, 3) == wPattern) wCount++;
             }
             Console.WriteLine(wCount);

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_Avoid_Rook_Attack", "B_Av
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Avoid_Knight_Attack", "C_Avoid_Knight_Attack\C_Avoid_Knight_Attack.csproj", "{2DC0D4F8-4F4B-48A6-AE1D-D99CB1B75CC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_Many_Segments", "D_Many_Segments\D_Many_Segments.csproj", "{0F6E9124-3654-40CF-A513-F40887C0C343}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2DC0D4F8-4F4B-48A6-AE1D-D99CB1B75CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DC0D4F8-4F4B-48A6-AE1D-D99CB1B75CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DC0D4F8-4F4B-48A6-AE1D-D99CB1B75CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6E9124-3654-40CF-A513-F40887C0C343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6E9124-3654-40CF-A513-F40887C0C343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6E9124-3654-40CF-A513-F40887C0C343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6E9124-3654-40CF-A513-F40887C0C343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

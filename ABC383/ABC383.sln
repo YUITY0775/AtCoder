@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_Humidifier", "A_Humidifier\A_Humidifier.csproj", "{D50C9E6A-CDA0-443B-91A3-4A63C53DAB42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_Humidifier", "B_Humidifier\B_Humidifier.csproj", "{CD40DFE3-4237-4FDD-92D2-1F7A44757125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Humidifier", "C_Humidifier\C_Humidifier.csproj", "{01086CC9-03FD-45BC-B8BA-08AFF95ECE81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_9Divisors", "D_9Divisors\D_9Divisors.csproj", "{2AE51B50-FB8A-41A1-AD7D-BFC3BF2EC83D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50C9E6A-CDA0-443B-91A3-4A63C53DAB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50C9E6A-CDA0-443B-91A3-4A63C53DAB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50C9E6A-CDA0-443B-91A3-4A63C53DAB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50C9E6A-CDA0-443B-91A3-4A63C53DAB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD40DFE3-4237-4FDD-92D2-1F7A44757125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD40DFE3-4237-4FDD-92D2-1F7A44757125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD40DFE3-4237-4FDD-92D2-1F7A44757125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD40DFE3-4237-4FDD-92D2-1F7A44757125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01086CC9-03FD-45BC-B8BA-08AFF95ECE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01086CC9-03FD-45BC-B8BA-08AFF95ECE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01086CC9-03FD-45BC-B8BA-08AFF95ECE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01086CC9-03FD-45BC-B8BA-08AFF95ECE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE51B50-FB8A-41A1-AD7D-BFC3BF2EC83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE51B50-FB8A-41A1-AD7D-BFC3BF2EC83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE51B50-FB8A-41A1-AD7D-BFC3BF2EC83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE51B50-FB8A-41A1-AD7D-BFC3BF2EC83D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
