@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_22222", "A_22222\A_22222.csproj", "{652ECF48-7742-4EAA-8733-2EB510C0C2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_cat", "B_cat\B_cat.csproj", "{57F7CA45-E2B9-419A-9377-D2088129A4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Debug", "C_Debug\C_Debug.csproj", "{20A2105C-A190-4976-93CA-5503AB73CE77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_Colorful_Bracket_Sequence", "D_Colorful_Bracket_Sequence\D_Colorful_Bracket_Sequence.csproj", "{3C1845CF-1BFC-41A8-9999-6139D68FEC3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{652ECF48-7742-4EAA-8733-2EB510C0C2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652ECF48-7742-4EAA-8733-2EB510C0C2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652ECF48-7742-4EAA-8733-2EB510C0C2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652ECF48-7742-4EAA-8733-2EB510C0C2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F7CA45-E2B9-419A-9377-D2088129A4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F7CA45-E2B9-419A-9377-D2088129A4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F7CA45-E2B9-419A-9377-D2088129A4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F7CA45-E2B9-419A-9377-D2088129A4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A2105C-A190-4976-93CA-5503AB73CE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A2105C-A190-4976-93CA-5503AB73CE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A2105C-A190-4976-93CA-5503AB73CE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A2105C-A190-4976-93CA-5503AB73CE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1845CF-1BFC-41A8-9999-6139D68FEC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1845CF-1BFC-41A8-9999-6139D68FEC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1845CF-1BFC-41A8-9999-6139D68FEC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1845CF-1BFC-41A8-9999-6139D68FEC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
